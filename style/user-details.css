@@ -1,0 +1,108 @@
+body {
+    background: rgba(128, 128, 128, 0.1);
+    font-size: 26px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.userDetails {
+    width: 35vw;
+    background: blue;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    color: white;
+}
+
+.objTitle {
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+
+.item {
+    color: black;
+}
+
+.objInfo {
+    color: yellow;
+}
+
+.btn {
+    background: yellow;
+    border-radius: 30px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-size: 30px;
+    width: 90vw;
+    padding: 10px 0;
+}
+
+.btn:hover {
+    background: blueviolet;
+    color: white;
+}
+
+.btnPostDetails {
+    font-size: 20px;
+    background: yellow;
+    margin: 10px 0 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px 20px;
+}
+
+.btnPostDetails:hover {
+    background: blueviolet;
+    color: white;
+}
+
+.divPosts{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.divPost{
+    flex: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: greenyellow;
+    text-align: center;
+    padding: 5px;
+    border-radius: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
