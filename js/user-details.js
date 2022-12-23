@@ -1,8 +1,8 @@
 let url = new URL(location.href);
 let user = JSON.parse(url.searchParams.get('user'));
 
-let address = user.address
-let company = user.company
+let address = user.address;
+let company = user.company;
 delete user.address;
 delete user.company;
 user = {...user, address, company};
@@ -14,7 +14,7 @@ btn.classList.add('btn');
 btn.innerText = 'Post of Current User';
 
 let userDetails = document.createElement('div');
-userDetails.classList.add('userDetails')
+userDetails.classList.add('userDetails');
 wrapper.appendChild(userDetails);
 
 showUserDetails(user);
@@ -27,7 +27,7 @@ btn.onclick = () => {
         .then(value => value.json())
         .then(posts => {
             let divPosts = document.createElement('div');
-            divPosts.classList.add('divPosts')
+            divPosts.classList.add('divPosts');
             wrapper.appendChild(divPosts);
 
             for (const post of posts) {
@@ -36,7 +36,7 @@ btn.onclick = () => {
                 div.innerHTML = `<div>ID: ${post.id}.</div> Title: ${post.title} `;
 
                 let button = document.createElement('button');
-                button.classList.add('btnPostDetails')
+                button.classList.add('btnPostDetails');
                 button.innerText = 'Post Details';
 
                 button.onclick = () => location.href = `../pages/post-details.html?post=${JSON.stringify(post)}`;

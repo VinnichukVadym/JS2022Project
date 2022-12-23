@@ -5,10 +5,10 @@ fetch('https://jsonplaceholder.typicode.com/users')
 
         for (const user of users) {
             let divUser = document.createElement('div');
-            divUser.classList.add('divUser')
+            divUser.classList.add('divUser');
 
             let div = document.createElement('div');
-            div.innerText = `${user.id}. ${user.name} `
+            div.innerText = `${user.id}. ${user.name} `;
 
             let btn = document.createElement('button');
             btn.classList.add('btn')
