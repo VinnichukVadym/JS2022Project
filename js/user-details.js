@@ -39,15 +39,13 @@ btn.onclick = () => {
                 button.classList.add('btnPostDetails')
                 button.innerText = 'Post Details';
 
-                let a = document.createElement('a');
-                a.href = `../pages/post-details.html?post=${JSON.stringify(post)}`;
+                button.onclick = () => location.href = `../pages/post-details.html?post=${JSON.stringify(post)}`;
 
-                a.appendChild(button);
-                div.appendChild(a);
+                div.appendChild(button);
                 divPosts.appendChild(div);
             }
         })
-    btn.style.display ='none';
+    btn.style.display = 'none';
 }
 
 function showUserDetails(user, classKey = 'item') {

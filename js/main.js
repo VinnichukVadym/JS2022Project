@@ -1,4 +1,4 @@
-fetch('http://jsonplaceholder.typicode.com/users')
+fetch('https://jsonplaceholder.typicode.com/users')
     .then(value => value.json())
     .then(users => {
         let [wrapper] = document.getElementsByClassName('wrapper');
@@ -14,11 +14,9 @@ fetch('http://jsonplaceholder.typicode.com/users')
             btn.classList.add('btn')
             btn.innerText = 'User Details';
 
-            let a = document.createElement('a');
-            a.href = `pages/user-details.html?user=${JSON.stringify(user)}`
+            btn.onclick = () => location.href = `pages/user-details.html?user=${JSON.stringify(user)}`
 
-            a.appendChild(btn);
-            divUser.append(div, a)
+            divUser.append(div, btn);
             wrapper.appendChild(divUser);
 
         }
