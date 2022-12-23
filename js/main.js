@@ -1,4 +1,4 @@
-fetch('http://jsonplaceholder.typicode.com/users')
+fetch('https://jsonplaceholder.typicode.com/users')
     .then(value => value.json())
     .then(users => {
         let [wrapper] = document.getElementsByClassName('wrapper');
